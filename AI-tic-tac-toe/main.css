@@ -1,0 +1,156 @@
+:root{
+    --color-primary: #5A1E76;
+    --color-secondary: #1c0328;
+    --text-primary: #DCBF3F;
+    --text-secondary: #72CFF9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+body{
+    background-color: var(--color-primary);
+}
+
+h1{
+    text-align: center;
+    margin-top: 8vh;
+}
+
+h1 span:nth-child(odd){
+    color: var(--text-primary);
+    font-size: 48px;
+}
+
+h1 span:nth-child(even){
+    color: var(--text-secondary);
+    font-size: 48px;
+}
+
+.game-container{
+    background-color: var(--color-secondary);
+    height: 70vh;
+    width: 30%;
+    margin: 32px auto;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.score-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    font-size: 12px;
+}
+
+.score-card div{
+    width: 30%;
+    text-align: center;
+    padding: 8px;
+    border-radius: 10px;
+    color: var(--color-secondary);
+}
+
+.player-score{
+    background-color: var(--text-primary);
+}
+
+.draw-score{
+    background-color: var(--text-secondary);
+}
+
+.ai-score{
+    background-color: var(--text-primary);
+}
+
+.game-board{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 24px;
+}
+
+.game-board-cell{
+    background-color: var(--color-primary);
+    opacity: 0.7;
+    border-radius: 10px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board-cell:hover{
+    opacity: 1;
+}
+
+img{
+    height: 80%;
+}
+
+.refresh-btn
+{
+    display: block;
+    margin: 8px auto;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--text-secondary);
+    color: var(--color-secondary);
+}
+
+.refresh-btn:hover
+{
+    border: 2px solid var(--text-secondary);
+    background-color: var(--color-secondary);
+    color: var(--text-primary);
+}
+
+@media screen and (width<1150px) {
+    .game-container{
+        width: 40%;
+    }
+}
+
+@media screen and (width<850px) {
+    .game-container{
+        width: 50%;
+    }
+}
+
+@media screen and (width<700px) {
+    .game-container{
+        width: 70%;
+        height: 60vh;
+    }
+
+    .score-card{
+        font-size: 10px;
+    }
+
+    .game-board-cell{
+        height: 7vh;
+    }
+
+}
+
+@media screen and (width<500px) {
+    .game-container{
+        width: 90%;
+    }
+
+    .score-card{
+        font-size: 10px;
+    }
+
+    .game-board-cell{
+        height: 7vh;
+    }
+}
