@@ -2,6 +2,9 @@
 
 This project is a Tic Tac Toe game implemented in JavaScript. It allows a player to play against an AI opponent using the minimax algorithm to determine the optimal moves. The game is played on a 3x3 grid, and the goal is to get three of your symbols (either 'X' or 'O') in a row, either horizontally, vertically, or diagonally.
 
+## Live Preview
+https://ibrahim-27.github.io/AI-tic-tac-toe/
+
 ## Features
 
 - Play against the AI: The game provides an AI opponent that uses the minimax algorithm to make intelligent moves.
